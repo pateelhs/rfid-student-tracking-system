@@ -48,6 +48,8 @@ namespace Fyp_Proj
             this.button7 = new System.Windows.Forms.Button();
             this.stid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -90,9 +92,9 @@ namespace Fyp_Proj
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(164, 207);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 45;
-            this.label7.Text = "Picture";
+            this.label7.Text = "Picture Path";
             // 
             // stpath
             // 
@@ -100,6 +102,7 @@ namespace Fyp_Proj
             this.stpath.Name = "stpath";
             this.stpath.Size = new System.Drawing.Size(123, 20);
             this.stpath.TabIndex = 5;
+            this.stpath.TextChanged += new System.EventHandler(this.stpath_TextChanged);
             // 
             // label5
             // 
@@ -264,11 +267,22 @@ namespace Fyp_Proj
             this.label3.TabIndex = 48;
             this.label3.Text = "Staff Id";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(510, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 221);
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Admin_Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 315);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.stid);
             this.Controls.Add(this.button7);
@@ -292,6 +306,7 @@ namespace Fyp_Proj
             this.Name = "Admin_Staff";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Admin_Staff_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +334,7 @@ namespace Fyp_Proj
         internal System.Windows.Forms.Button button7;
         internal System.Windows.Forms.TextBox stid;
         internal System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

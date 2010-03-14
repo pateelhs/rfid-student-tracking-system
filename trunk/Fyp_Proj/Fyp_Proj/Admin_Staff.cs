@@ -146,5 +146,24 @@ namespace Fyp_Proj
 
         }
 
+        private void stpath_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = Image.FromFile(stpath.Text);
+            }
+            catch (Exception ex)
+            {
+                pictureBox1.Image = null;
+                string ret = ex.ToString();
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
