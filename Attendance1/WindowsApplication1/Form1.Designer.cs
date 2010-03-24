@@ -30,7 +30,7 @@ namespace WindowsApplication1
         {
             this.path = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.browse = new System.Windows.Forms.Button();
             this.Start = new System.Windows.Forms.Button();
             this.Stop = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
@@ -53,15 +53,15 @@ namespace WindowsApplication1
             this.label1.TabIndex = 1;
             this.label1.Text = "File Path:";
             // 
-            // button1
+            // browse
             // 
-            this.button1.Location = new System.Drawing.Point(416, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Browse";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.browse.Location = new System.Drawing.Point(416, 114);
+            this.browse.Name = "browse";
+            this.browse.Size = new System.Drawing.Size(75, 23);
+            this.browse.TabIndex = 2;
+            this.browse.Text = "Browse";
+            this.browse.UseVisualStyleBackColor = true;
+            this.browse.Click += new System.EventHandler(this.button1_Click);
             // 
             // Start
             // 
@@ -96,11 +96,12 @@ namespace WindowsApplication1
             this.ClientSize = new System.Drawing.Size(503, 153);
             this.Controls.Add(this.Stop);
             this.Controls.Add(this.Start);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.browse);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.path);
             this.Name = "Form1";
             this.Text = "Attendance";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,7 +112,7 @@ namespace WindowsApplication1
 
         private System.Windows.Forms.TextBox path;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button browse;
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Button Stop;
         private System.IO.FileSystemWatcher fileSystemWatcher1;

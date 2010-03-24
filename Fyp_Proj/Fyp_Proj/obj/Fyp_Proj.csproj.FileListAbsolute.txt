@@ -138,3 +138,6 @@ C:\Users\Fahad\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Releas
 C:\Users\Fahad\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Release\Fyp_Proj.csproj.GenerateResource.Cache
 C:\Users\Fahad\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Release\Fyp_Proj.exe
 C:\Users\Fahad\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Release\Fyp_Proj.pdb
+C:\Users\Abdul Rehman Durrani\Desktop\rfid-student-tracking-systemx\Fyp_Proj\Fyp_Proj\bin\Debug\Fyp_Proj.exe.config
+C:\Users\Abdul Rehman Durrani\Desktop\rfid-student-tracking-systemx\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.exe
+C:\Users\Abdul Rehman Durrani\Desktop\rfid-student-tracking-systemx\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.pdb

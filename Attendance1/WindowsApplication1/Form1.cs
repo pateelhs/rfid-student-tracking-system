@@ -81,5 +81,11 @@ namespace WindowsApplication1
         {
             fileSystemWatcher1.EnableRaisingEvents = false;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Start.PerformClick();
+            Start.Enabled = false;            
+        }
     }
 }
