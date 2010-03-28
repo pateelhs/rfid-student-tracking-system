@@ -92,6 +92,12 @@
     <Compile Include="ClAdmStu.cs" />
     <Compile Include="ClLogin.cs" />
     <Compile Include="ClStaff.cs" />
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoomAssign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,10 @@
     <EmbeddedResource Include="BookAssign1.resx">
       <DependentUpon>BookAssign1.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Map.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoomAssign.resx">
       <DependentUpon>RoomAssign.cs</DependentUpon>
