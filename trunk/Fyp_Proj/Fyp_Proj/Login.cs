@@ -105,6 +105,12 @@ namespace Fyp_Proj
            
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Map mObj = new Map();
+            mObj.Show();
+        }
+
        
 
     }
