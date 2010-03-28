@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
-
+using System.Xml;
 
 namespace WindowsApplication1
 {
@@ -32,7 +32,17 @@ namespace WindowsApplication1
             {
                 path.Text =System.IO.Path.GetDirectoryName(fb1.FileName );
                 file = System.IO.Path.GetFileName(fb1.FileName);
-                pathx = fb1.FileName.ToString();              
+                pathx = fb1.FileName.ToString();
+                File.WriteAllText("file.xml", String.Empty);
+                XmlTextWriter twriter = new XmlTextWriter("file.xml", null);
+                twriter.WriteStartDocument();
+                twriter.WriteStartElement("file_path");
+                twriter.WriteString(fb1.FileName);
+                twriter.WriteEndElement();
+                twriter.WriteEndDocument();
+                twriter.Close();
+               
+
             }
         }
 
@@ -41,7 +51,9 @@ namespace WindowsApplication1
             try
             {
                 fileSystemWatcher1.Path = @path.Text;
-                fileSystemWatcher1.EnableRaisingEvents = true;               
+                fileSystemWatcher1.EnableRaisingEvents = true;
+                Start.Enabled = false;
+                browse.Enabled = false;
                 
             }
             catch (Exception ex)
@@ -52,6 +64,7 @@ namespace WindowsApplication1
       
         private void fileSystemWatcher1_Changed(object sender, System.IO.FileSystemEventArgs e)
         {
+           
             try
             {
                
@@ -80,12 +93,23 @@ namespace WindowsApplication1
         private void Stop_Click(object sender, EventArgs e)
         {
             fileSystemWatcher1.EnableRaisingEvents = false;
+            Start.Enabled = true;
+            browse.Enabled = true;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            path.Enabled = false;
+            XmlTextReader treader = new XmlTextReader("file.xml");
+            treader.Read();
+            pathx = treader.ReadElementString("file_path");
+            path.Text = System.IO.Path.GetDirectoryName(pathx);
+            treader.Close();
             Start.PerformClick();
-            Start.Enabled = false;            
+            Start.Enabled = false;
+            browse.Enabled = false;
+            Console.WriteLine(pathx);
         }
     }
 }
