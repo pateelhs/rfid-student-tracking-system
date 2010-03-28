@@ -141,3 +141,22 @@ C:\Users\Fahad\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Releas
 C:\Users\Abdul Rehman Durrani\Desktop\rfid-student-tracking-systemx\Fyp_Proj\Fyp_Proj\bin\Debug\Fyp_Proj.exe.config
 C:\Users\Abdul Rehman Durrani\Desktop\rfid-student-tracking-systemx\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.exe
 C:\Users\Abdul Rehman Durrani\Desktop\rfid-student-tracking-systemx\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.pdb
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\bin\Debug\Fyp_Proj.exe.config
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.exe
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.pdb
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\bin\Debug\Fyp_Proj.exe
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\bin\Debug\Fyp_Proj.pdb
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Admin_Admin.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Admin_Faculty.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Admin_Staff.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Admin_Student.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.admin.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.BookAssign1.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Map.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.RoomAssign.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.HostelAttendant.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Librarian.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Login.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.Properties.Resources.resources
+C:\Users\Ozman\Desktop\rfid-student-tracking-system\Fyp_Proj\Fyp_Proj\obj\Debug\Fyp_Proj.csproj.GenerateResource.Cache
