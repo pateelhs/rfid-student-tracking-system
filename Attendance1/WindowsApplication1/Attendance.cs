@@ -21,7 +21,7 @@ namespace WindowsApplication1
          SqlCommand query = new SqlCommand(str1 , conn);
          DateTime date = DateTime.Parse(data[4]);
          string format = "HH:mm";
-         string str3 = "SELECT * from CourseTrans where tid = '" + data[0] + "' AND (day1 = '" + System.DateTime.Now.DayOfWeek + "' OR day2 = '" + System.DateTime.Now.DayOfWeek + "') AND starttime < '" + date.ToString(format) + "' AND endtime > '" + date.ToString(format) + "'";         
+         string str3 = "SELECT * from CourseTrans where tid = '" + data[0] + "' AND (day1 = '" + System.DateTime.Now.DayOfWeek + "' OR day2 = '" + System.DateTime.Now.DayOfWeek + "') AND starttime <= '" + date.ToString(format) + "' AND endtime > '" + date.ToString(format) + "'";         
          SqlConnection conn1 = new SqlConnection(str2);
          SqlCommand query1 = new SqlCommand(str3, conn1);         
          conn.Open();
@@ -60,7 +60,7 @@ namespace WindowsApplication1
 
          string str4 = "SELECT * from stdcourse where tagid = '" + data[1] + "' AND cid = '" + courseid + "'";
          string status;
-         if (now < st1 && now > starttime)         
+         if (now < st1 && now >= starttime)         
          status = "P";
          else
          status = "A";
@@ -80,7 +80,6 @@ namespace WindowsApplication1
              conn3.Open();
              queryx1.ExecuteNonQuery();             
              conn3.Close();
-             MessageBox.Show("Done");
          }
          conn5.Close();
 
