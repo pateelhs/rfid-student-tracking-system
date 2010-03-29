@@ -101,12 +101,20 @@ namespace WindowsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {           
             path.Enabled = false;
-            XmlTextReader treader = new XmlTextReader("file.xml");
-            treader.Read();
-            pathx = treader.ReadElementString("file_path");
-            path.Text = System.IO.Path.GetDirectoryName(pathx);
-            file = System.IO.Path.GetFileName(pathx);
-            treader.Close();
+            try
+            {
+                XmlTextReader treader = new XmlTextReader("file.xml");
+                treader.Read();
+                pathx = treader.ReadElementString("file_path");
+                path.Text = System.IO.Path.GetDirectoryName(pathx);
+                file = System.IO.Path.GetFileName(pathx);
+                treader.Close();
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+                browse.PerformClick();
+            }
             Start.PerformClick();
             Start.Enabled = false;
             browse.Enabled = false;            
