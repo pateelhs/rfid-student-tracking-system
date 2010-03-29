@@ -58,7 +58,7 @@ namespace WindowsApplication1
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+                ex.Message.ToString();
             }
         }
       
@@ -85,7 +85,7 @@ namespace WindowsApplication1
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+                ex.Message.ToString();
             }
         }
 
@@ -99,17 +99,36 @@ namespace WindowsApplication1
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {           
             path.Enabled = false;
             XmlTextReader treader = new XmlTextReader("file.xml");
             treader.Read();
             pathx = treader.ReadElementString("file_path");
             path.Text = System.IO.Path.GetDirectoryName(pathx);
+            file = System.IO.Path.GetFileName(pathx);
             treader.Close();
             Start.PerformClick();
             Start.Enabled = false;
-            browse.Enabled = false;
-            Console.WriteLine(pathx);
+            browse.Enabled = false;            
+            
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();            
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon1.Visible = false;          
+
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (FormWindowState.Minimized == this.WindowState)
+            {
+                notifyIcon1.Visible = true;
+                Hide();
+            }
+          
         }
     }
 }
